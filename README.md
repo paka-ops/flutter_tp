@@ -56,80 +56,20 @@ L'application offre une interface utilisateur cohérente et performante sur iOS 
 ## 📸 Captures d'Écran
 
 ### Écran 1 - Liste des Produits
-```
-┌─────────────────────────────┐
-│  ≡ PAKA E-Commerce      🔍  │
-├─────────────────────────────┤
-│                             │
-│  [Produit 1]   Prix: 29,99€ │
-│  ▭▭▭▭▭ (5/5) ⭐           │
-│  [Ajouter au panier]        │
-│                             │
-│  [Produit 2]   Prix: 49,99€ │
-│  ▭▭▭▭░ (4/5) ⭐           │
-│  [Ajouter au panier]        │
-│                             │
-│  [Produit 3]   Prix: 89,99€ │
-│  ▭▭▭▭▭ (5/5) ⭐           │
-│  [Ajouter au panier]        │
-│                             │
-└─────────────────────────────┘
-```
+<img width="540" height="1230" alt="image" src="https://github.com/user-attachments/assets/dcebd577-a7c6-453b-a8c7-ddb3a6bd1705" />
+
 
 ### Écran 2 - Détails du Produit
 ```
-┌─────────────────────────────┐
-│  < Détails du Produit    ⭐  │
-├─────────────────────────────┤
-│                             │
-│      [    IMAGE PRODUIT   ] │
-│                             │
-│  Produit Premium            │
-│  Prix: 79,99€              │
-│  ▭▭▭▭▭ (5/5) - 234 avis  │
-│                             │
-│  Description:               │
-│  Produit de haute qualité   │
-│  avec garantie 2 ans.       │
-│                             │
-│  Quantité: [1] [+][-]      │
-│                             │
-│  [Ajouter au Panier]        │
-│  [Continuer Shopping]       │
-│                             │
-└─────────────────────────────┘
+
+<img width="540" height="1230" alt="image" src="https://github.com/user-attachments/assets/fdebf94b-df17-44a6-8386-7c7f73288ef4" />
+
 ```
 
 ### Écran 3 - Panier d'Achat
 ```
-┌─────────────────────────────┐
-���  🛒 Panier (3 articles)      │
-├─────────────────────────────┤
-│                             │
-│  Produit 1          29,99€  │
-│  Qty: 2            x 59,98€ │
-│  [✕]                        │
-│                             │
-│  Produit 2          49,99€  │
-│  Qty: 1            x 49,99€ │
-│  [✕]                        │
-│                             │
-│  Produit 3          89,99€  │
-│  Qty: 1            x 89,99€ │
-│  [✕]                        │
-│                             │
-│  ───────────────────────    │
-│  Sous-total:        199,96€ │
-│  Frais livraison:     9,99€ │
-│  Taxes:              20,99€ │
-│                             │
-│  TOTAL:            230,94€  │
-│                             │
-│  [Valider la Commande]      │
-│  [Continuer Shopping]       │
-│                             │
-└─────────────────────────────┘
-```
+
+<img width="1080" height="2460" alt="image" src="https://github.com/user-attachments/assets/61c25060-ea98-4b8e-9b63-54c0c73c9aee" />
 
 ---
 
@@ -138,11 +78,6 @@ L'application offre une interface utilisateur cohérente et performante sur iOS 
 La principale difficulté lors du développement de cette version Flutter a été la **gestion de la réactivité de l'état** et la **synchronisation du panier** entre différents écrans de la navigation. Flutter's BuildContext et setState peuvent être délicats à gérer dans une architecture complexe. Nous avons résolu ce problème en implémentant **Provider pour la gestion centralisée de l'état**, ce qui a permis une propagation automatique des changements du panier à tous les widgets consommateurs. De plus, nous avons utilisé **Hive pour la persistance locale**, ce qui garantit que le panier reste intact même après la fermeture de l'application.
 
 ---
-
-## 💡 Améliorations Possibles
-
-Avec plus de temps, nous ajouterions : (1) un **système d'authentification Firebase complet** avec stockage de profils utilisateur dans Firestore, (2) une **intégration Payment avec Stripe ou Apple Pay/Google Pay**, (3) un **système de favoris/wishlist** avec synchronisation cloud, (4) des **animations fluides et transitions** pour une meilleure expérience utilisateur, (5) un **mode offline** avec synchronisation automatique des données, (6) un **système de recommandations** basé sur l'historique d'achat, (7) une **application web générique** avec la même codebase Flutter Web, et (8) des **tests unitaires, de widgets et d'intégration complets** couvrant tous les scénarios critiques.
-
 ---
 
 ## 🔗 Version Alternative
