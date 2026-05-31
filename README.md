@@ -106,4 +106,4 @@ flutter run
 ## 📝 Licence
 Ce projet est fourni à titre éducatif.
 
-**Développé avec ❤️ en Flutter et Dart**
+
